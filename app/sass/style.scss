@@ -3,6 +3,8 @@
 @import "../fonts/font-awesome/css/font-awesome.min.css";
 @import "../libs/slick/slick.scss";
 @import "../libs/slick/slick-theme.scss";
+@import "../libs/magnific-popup/src/css/main.scss";
+
 
 
 *::-webkit-input-placeholder {
@@ -116,6 +118,7 @@ select {
 
 @import "pages/index";
 @import "pages/pageProduct";
+@import "libs";
 
 
 
