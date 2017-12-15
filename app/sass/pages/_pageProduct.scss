@@ -1,0 +1,254 @@
+@import "../variables";
+
+.container-row,
+.breadcrumbs{
+  padding: 0 10px;
+}
+.breadcrumbs_ul{
+  display: flex;
+  margin: 15px 0 40px 0;
+}
+.breadcrumbs_item{
+  i{
+    font-size: 4px;
+    color: #a2a2a2;
+    position: relative;
+    top: -2px;
+    margin: 0 10px;
+  }
+  a{
+    color: #a2a2a2;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: color .2s;
+    &:hover{
+      color: $hov;
+    }
+  }
+}
+.sidebar{
+  max-width: 260px;
+}
+.sidebar_item{
+  a{
+    color: #262b31;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    transition: color .2s;
+    &:hover{
+      color: $hov;
+    }
+  }
+}
+.sidebar_item--blue{
+  a{
+    color: #4097ff;
+  }
+}
+.sidebar_item--border{
+  margin-bottom: 10px;
+  a{
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 8px;
+    display: inline-block;
+  }
+}
+.drop-sidebar{
+  display: none;
+  margin-left: 15px;
+}
+.drop-sidebar_item{
+  a{
+    color: #6b6b6b;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
+}
+.container-row{
+  display: flex;
+  justify-content: space-between;
+}
+.category-item--wiz{
+  width: 100%;
+  max-width: 100%;
+  height: 280px;
+  margin-top: 0;
+}
+.category-item_text-top--font{
+  font-size: 34px;
+}
+.category-item_text-bot--font{
+  font-size: 44px;
+}
+
+.col-left{
+  width: 20%;
+}
+.col-right{
+  width: 80%;
+}
+.wrap-title-sliders_h2--mar-no{
+  margin-left: 0;
+  margin-right: 0;
+  width: 60%;
+}
+.wrap-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap-select{
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sel-lab{
+  margin-right: 10px;
+  color: #262b31;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.selec{
+  width: 195px;
+  height: 40px;
+  border: 1px solid #d1d1d1;
+  background: #ffffff url("../img/arrow.png")no-repeat 95% center;
+  padding-left: 10px;
+  outline: none;
+  color: #a2a2a2;
+  cursor: pointer;
+}
+.item-slid--wiz{
+  max-width: 272px;
+}
+.wrap-items-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.pagination_ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 270px;
+  margin: 0 auto;
+}
+.pagination_item{
+  a{
+    color: #a2a2a2;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 2px 3px;
+    &:hover{
+      background: white;
+      color: $hov;
+    }
+  }
+}
+.arr-pag{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover{
+    border: 1px solid $hov;
+    i{
+      color: $hov;
+    }
+  }
+}
+.all-pages{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #262b31;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 60px;
+}
+
+
+
+
+
+
+//media
+@media (max-width: 1080px){
+  .wrap-title-sliders_h2--mar-no{
+    h2{
+      font-size: 24px;
+    }
+  }
+  .wrap-items-cont{
+    justify-content: space-around;
+  }
+}
+@media (max-width: 768px){
+  .container-row{
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .col-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .col-right {
+    width: 100%;
+  }
+  .wrap-title{
+    flex-direction: column;
+  }
+  .wrap-select{
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .wrap-title-sliders_h2--mar-no{
+    width: 100%;
+    text-align: center;
+    h2{
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 480px){
+  .breadcrumbs_ul{
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+  .breadcrumbs_item a{
+    font-size: 8px;
+  }
+  .container-row,
+  .breadcrumbs{
+    padding: 0;
+  }
+  .category-item_text-bot--font {
+    font-size: 34px;
+  }
+  .wrap-title-sliders_h2--mar-no h2::after{display: none}
+  .wrap-select{
+    flex-direction: column;
+  }
+  .sel-lab{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
